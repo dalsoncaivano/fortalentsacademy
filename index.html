@@ -14,6 +14,11 @@
       background-position: center;
       background-repeat: no-repeat;
     }
+
+    .navbar-nav .nav-link,
+    .dropdown-menu .dropdown-item {
+      white-space: nowrap;
+    }
   </style>
 </head>
 <body id="page-top">
@@ -23,7 +28,13 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#courses">Cursos</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="sobreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sobre Nós</a>
+            <ul class="dropdown-menu" aria-labelledby="sobreDropdown">
+              <li><a class="dropdown-item" href="#modelo-academico">Modelo Acadêmico</a></li>
+            </ul>
+          </li>
           <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
         </ul>
@@ -38,11 +49,18 @@
     </div>
   </header>
 
-  <section id="about">
+  <section id="courses" class="bg-light">
+    <div class="container px-5">
+      <h2 class="display-4">Cursos</h2>
+      <p>Apresente aqui os cursos disponíveis.</p>
+    </div>
+  </section>
+
+  <section id="modelo-academico">
     <div class="container px-5">
       <div class="row gx-5 align-items-center">
         <div class="col-lg-6">
-          <h2 class="display-4">Sobre</h2>
+          <h2 class="display-4">Modelo Acadêmico</h2>
           <p>Texto sobre o seu projeto ou empresa. Descreva sua missão e valores.</p>
         </div>
         <div class="col-lg-6"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://source.unsplash.com/700x500/?technology" alt=""></div>
