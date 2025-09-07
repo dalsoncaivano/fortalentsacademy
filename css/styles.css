@@ -10919,3 +10919,39 @@ header.masthead .bg-circle-4 {
     font-size: 4rem;
   }
 }
+
+/* Dropdown submenu for Cursos with fade effect */
+.navbar-custom .dropdown {
+  position: relative;
+}
+
+.navbar-custom .dropdown .submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+  z-index: 1000;
+}
+
+.navbar-custom .dropdown:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0s;
+}
+
+.navbar-custom .dropdown .submenu li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-custom .dropdown .submenu li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
